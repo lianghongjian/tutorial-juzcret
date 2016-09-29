@@ -2,10 +2,10 @@
 //====================
 @heightSecretItem: 238px;
 @secretItemGutter: 6px;
-
+ 
 // Mixins
 //====================
-
+ 
 // Opacity
 .opacity(@opacity) {
 	opacity: @opacity;
@@ -13,10 +13,10 @@
 	@opacity-ie: (@opacity * 100);
 	filter: ~"alpha(opacity=@{opacity-ie})";
 }
-
+ 
 // Common Style
 //====================
-
+ 
 // Secret Wall
 .secret-wall-container {
 	padding: 20px 30px;
@@ -81,35 +81,4 @@
       }
     }
   }
-}
-
-// Add Secret
-
-.share-secret-form {
-	.form-title {
-		margin: 0 0 10px;
-		text-shadow: none;
-	}
-	textarea {
-		min-width: 271px;
-		max-width: 271px;
-		max-height: 300px;
-		margin-bottom: 10px;
-		min-height: 80px;
-	}
-	textarea, input {
-		margin-bottom: 5px;
-	}
-}
-
-.share-secret-box {
-	display: inline-block;
-	text-align: left;
-	margin-top: 20px;
-	.title {
-		text-align: center;
-	}
-	.btn {
-		min-width: 78px;
-	}
 }
